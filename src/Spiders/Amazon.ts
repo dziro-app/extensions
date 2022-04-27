@@ -4,6 +4,10 @@ import { Spidery } from "./Base";
   * Spidery implementation for amazon site
   */
 export class AmazonSpidery implements Spidery {
+  static compareHost = (host: string): boolean => {
+    return host.indexOf("amazon.com") !== -1
+  }
+
   getImage = (): string => {
     const wrapperElement = document.querySelector("li.image.selected")
     if (wrapperElement !== null) {

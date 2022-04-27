@@ -1,22 +1,31 @@
 /*
-* Factoru to decide which spider implementation fit the best
+* Factory to decide which spider implementation fit the best
 */
 
 import { AmazonSpidery } from "./Amazon"
+import { MLSpidery } from "./ML"
 
-const relation = new Map([
-  ['amazon.com.mx', AmazonSpidery],
-  ['default', AmazonSpidery]  
-])
+
+const spiders = [
+  AmazonSpidery,
+  MLSpidery
+]
 
 export class SpiderFactory {
   SpiderClass 
   constructor(host: string) {
-    if(relation.has(host)) {
-      this.SpiderClass = relation.get(host)
-    } else {
-      this.SpiderClass = relation.get("default")
+    for(const spider of spiders) {
+      if (spider.compareHost(location.host)) {
+        this.SpiderClass = spider
+        break
+      }
     }
+
+    // Default one
+    if (!this.SpiderClass) {
+      this.SpiderClass = AmazonSpidery
+    }
+
   }
 
   get () {
