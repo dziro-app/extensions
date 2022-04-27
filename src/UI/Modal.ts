@@ -26,7 +26,7 @@ export class Modal {
 
   createContent(message: string) {
     const Content = document.createElement("div")
-    const Instructions = document.createElement("p")
+    const Instructions = document.createElement("h3")
     const Code = document.createElement("textarea")
 
     Instructions.innerHTML = "Haz click sobre el siguiente texto y posteriormente pégalo en DZIRO."
@@ -35,8 +35,10 @@ export class Modal {
     Code.value = message
     Code.readOnly = true
     Code.rows = 10
-    Code.cols = 10
+    Code.cols = 80
     Code.style.border = "2px solid #000"
+    Code.style.padding = "8px"
+    Code.style.boxSizing = "border-box"
 
     Content.style.background = "#fff"
     Content.style.padding = "1em"
