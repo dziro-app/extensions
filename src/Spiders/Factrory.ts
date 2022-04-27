@@ -4,6 +4,7 @@
 
 import { AmazonSpidery } from "./Amazon"
 import { MLSpidery } from "./ML"
+import { DefaultSpidery } from "./Default"
 
 
 const spiders = [
@@ -23,7 +24,7 @@ export class SpiderFactory {
 
     // Default one
     if (!this.SpiderClass) {
-      this.SpiderClass = AmazonSpidery
+      this.SpiderClass = DefaultSpidery
     }
 
   }

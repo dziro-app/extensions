@@ -1,8 +1,5 @@
 import { Spidery } from "./Base";
 
-
-// document.querySelectorAll(".ui-pdp-container__row--reverse")
-
 export class MLSpidery implements Spidery {
   static compareHost = (host: string): boolean => {
     return host.indexOf("mercadolibre.com") !== -1
