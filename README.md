@@ -9,11 +9,10 @@
 ## Sites
 
 > Ready
-- None
-> WIP
 - Amazon.mx (Desktop)
-> Todo
+> WIP
 - Mercado libre (Desktop)
+> Todo
 - Default
 ---
 

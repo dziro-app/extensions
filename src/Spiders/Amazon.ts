@@ -5,15 +5,30 @@ import { Spidery } from "./Base";
   */
 export class AmazonSpidery implements Spidery {
   getImage = (): string => {
-    const url = document
-      .querySelectorAll("#imgTagWrapperId")[0]
-      .querySelector("img").src;
-    return url;
+    const wrapperElement = document.querySelector("li.image.selected")
+    if (wrapperElement !== null) {
+      const imageElement = wrapperElement.querySelector("img")
+      if (imageElement !== null) {
+        return imageElement.src
+      }
+    }
+    
+    return "" // Fallback case, wrapper was not found
   };
   getPrice = (): string => {
-    const price = document
-      .querySelector("#corePrice_feature_div")
-      .textContent.split("$")[1];
-    return price;
+    const priceWrapperElement = document.querySelector("#corePrice_feature_div")
+    const rangePriceWrapperElement = document.querySelector("#corePrice_desktop")
+
+    let realWrapper
+
+    if (priceWrapperElement !== null) {
+      realWrapper = priceWrapperElement
+    } else if (rangePriceWrapperElement !== null) {
+      realWrapper = rangePriceWrapperElement
+    } else {
+      return ""
+    }
+    const prices = realWrapper.textContent.trim().split("$");
+    return prices[prices.length -1]
   };
 }
