@@ -10,9 +10,8 @@
 
 > Ready
 - Amazon.mx (Desktop)
-> WIP
 - Mercado libre (Desktop)
-> Todo
+> WIP
 - Default
 ---
 
@@ -39,3 +38,4 @@ $ npm run pkg
 
 - [ ] Add exception advices when not all info may be found.
 - [ ] Connect with analytics to see more used sites and add logic for them.
+- [ ] Add more stores
