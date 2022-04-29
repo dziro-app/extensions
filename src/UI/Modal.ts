@@ -26,19 +26,22 @@ export class Modal {
 
   createContent(message: string) {
     const Content = document.createElement("div")
-    const Instructions = document.createElement("h3")
+    const Instructions = document.createElement("h2")
     const Code = document.createElement("textarea")
 
     Instructions.innerHTML = "Haz click sobre el siguiente texto y posteriormente pégalo en DZIRO."
     Instructions.style.textAlign = "center"
+    Instructions.style.margin = "32px 0"
 
     Code.value = message
     Code.readOnly = true
     Code.rows = 10
     Code.cols = 80
     Code.style.border = "2px solid #000"
+    Code.style.width = "100%"
     Code.style.padding = "8px"
     Code.style.boxSizing = "border-box"
+    Code.style.cursor = "pointer"
 
     Content.style.background = "#fff"
     Content.style.padding = "1em"
