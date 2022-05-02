@@ -1,12 +1,15 @@
 {
-  "name": "dziro-chrome-extension",
+  "name": "dziro-extension",
   "version": "1.0.0",
-  "description": "",
+  "description": "extensio for chrome or mozilla firefox",
   "main": "background.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -cw",
-    "pkg": "npm run build && zip -r dziro.zip ./dist",
+    "dev:chrome": "rollup -w -c config/chrome.js",
+    "dev:firefox": "rollup -w -c config/firefox.js",
+    "build:chrome": "rollup -c config/chrome.js",
+    "build:firefox": "rollup -c config/firefox.js",
+    "pkg:chrome": "npm run build:chrome && zip -r dziro-chrome.zip ./dist/chrome",
+    "pkg:firefox": "npm run build:firefox && zip -r dziro-firefox.zip ./dist/firefox",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -17,5 +20,8 @@
     "@types/node": "^17.0.28",
     "rollup": "^2.70.2",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "rollup-plugin-copy": "^3.4.0"
   }
 }

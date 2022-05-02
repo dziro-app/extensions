@@ -1,6 +1,6 @@
-import {WindowGetter} from "./Window"
-import {SpiderFactory} from "./Spiders/Factrory"
-import {Modal} from "./UI/Modal"
+import {WindowGetter} from "../../Window"
+import {SpiderFactory} from "../../Spiders/Factrory"
+import {Modal} from "../../UI/Modal"
 
 
 function start() {
