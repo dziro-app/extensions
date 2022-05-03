@@ -11,10 +11,9 @@ Supports for chrome and firefox.
 ---
 
 ## Development
-> Required tools
+> Required global tools
 - NodeJs *(16.2.0)*
-- Rollup *(2.70.2)*
-- Typescript *(4.6.3)*
+- Npm *(8.3.2)*
 
 > Development environment 
 

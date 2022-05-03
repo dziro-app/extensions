@@ -11,10 +11,9 @@ Soporte para chrome y firefox.
 ---
 
 ## Desarrollo
-> Herramientas necesarias
+> Herramientas globales necesarias
 - NodeJs *(16.2.0)*
-- Rollup *(2.70.2)*
-- Typescript *(4.6.3)*
+- Npm *(8.3.2)*
 
 > Ambiente de desarrollo  
 
