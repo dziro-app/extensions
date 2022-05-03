@@ -1,8 +1,8 @@
  # Dziro  extension
 
-*La extensiónde Dziro tiene como objetivo obtener la información de una página en dónde se encuentre un artículo que desee agregar a la [app Dzrio](https://dziro.vercel.app).*
+*Dziro extension has the porpuse of scrapping some information about an article in order to add it to [Dzrio app](https://dziro.vercel.app).*
 
-Soporte para chrome y firefox.
+Supports for chrome and firefox.
 
 <img src="https://duckduckgo.com/i/f57f75b5.png" alt="chrome" style="width: 40px" > 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/115px-Firefox_logo%2C_2019.svg.png"  alt="firefox" style="width: 40px"  />
@@ -10,39 +10,41 @@ Soporte para chrome y firefox.
 
 ---
 
-## Desarrollo
-> Herramientas necesarias
+## Development
+> Required tools
 - NodeJs *(16.2.0)*
 - Rollup *(2.70.2)*
 - Typescript *(4.6.3)*
 
-> Ambiente de desarrollo  
+> Development environment 
 
-Para correr el entorno de desarrollo debe instalar primero las dependencias.
+In order to run the development process first you need to install the dependencies.
 
 ```bash
 $ npm i
 ```
-Una vez hecho esto puede correr el proceso de compilación.
+Once installed, you can run the compile process.
 
 ```bash
-$ npm run dev:chrome # for Chrome
+$ npm run dev:chrome # for chrome
 $ npm run dev:firefox # for Firefox
 ```
 
 --- 
-## Generar bundle
-Para compilar el proyecto a una versió productiva y generar un .zip, puede correr alguno de los siguientes comandos.
+## Bundle generation
+
+To compile a prod version and generate a .zip file you can use one of the following commands.
 
 ```bash
 $ npm run pkg:chrome # for chrome
 $ npm run pkg:firefox # for firefox
 ```
 
-El resultado del zip lo encontrará en el directorio de cada plataforma dentro de la carpeta **dist**
+You can find the resulting .zip file inside the directory of each platform under the **dist** dir.
+
 
 ---
-## Soporte de sitios
+## Sites support
 
 - [X] amazon.com (Desktop)
 - [X] mercadolibre.com (Desktop)
