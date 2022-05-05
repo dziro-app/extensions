@@ -4,12 +4,14 @@
 
 import { AmazonSpidery } from "./Amazon"
 import { MLSpidery } from "./ML"
+import { WalmartSpidery } from "./Walmart"
 import { DefaultSpidery } from "./Default"
 
 
 const spiders = [
   AmazonSpidery,
-  MLSpidery
+  MLSpidery,
+  WalmartSpidery
 ]
 
 export class SpiderFactory {

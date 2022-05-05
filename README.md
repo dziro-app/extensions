@@ -46,7 +46,7 @@ El resultado del zip lo encontrará en el directorio de cada plataforma dentro d
 - [X] amazon.com (Desktop)
 - [X] mercadolibre.com (Desktop)
 - [X] "*" (Default Desktop)
-- [ ] WaltMart
+- [X] WalMart
 - [ ] Office Depot
 - [ ] Office Max
 - [ ] Stradivarius
