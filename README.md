@@ -47,8 +47,8 @@ El resultado del zip lo encontrará en el directorio de cada plataforma dentro d
 - [X] mercadolibre.com (Desktop)
 - [X] "*" (Default Desktop)
 - [X] WalMart
-- [ ] Office Depot
-- [ ] Office Max
+- [X] Office Depot
+- [X] Office Max
 - [ ] Stradivarius
 - [ ] Bershka
 - [ ] Pull&Bear
