@@ -49,7 +49,7 @@ El resultado del zip lo encontrará en el directorio de cada plataforma dentro d
 - [X] WalMart
 - [X] Office Depot
 - [X] Office Max
-- [ ] Stradivarius
+- [X] Stradivarius
 - [ ] Bershka
 - [ ] Pull&Bear
 - [ ] Forever 21

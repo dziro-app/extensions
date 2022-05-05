@@ -1,3 +1,5 @@
+import { encode } from "../../../node_modules/js-base64/base64"
+
 import {WindowGetter} from "../../Window"
 import {SpiderFactory} from "../../Spiders/Factrory"
 import {Modal} from "../../UI/Modal"
@@ -11,7 +13,7 @@ function start() {
 
   const info = wG.search()
   const data = JSON.stringify(info)
-  let b64 = window.btoa(data)
+  let b64 = encode(data)
   new Modal(b64)
 }
 
