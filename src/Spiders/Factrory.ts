@@ -7,6 +7,7 @@ import { MLSpidery } from "./ML"
 import { WalmartSpidery } from "./Walmart"
 import { OfficeDepotSpidery } from "./OfficeDepot"
 import { OfficeMaxSpidery } from "./OfficeMax"
+import { StradivariusSpidery } from "./Stradivarius"
 import { DefaultSpidery } from "./Default"
 
 
@@ -15,7 +16,8 @@ const spiders = [
   MLSpidery,
   WalmartSpidery,
   OfficeDepotSpidery,
-  OfficeMaxSpidery
+  OfficeMaxSpidery,
+  StradivariusSpidery
 ]
 
 export class SpiderFactory {
