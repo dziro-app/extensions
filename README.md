@@ -50,7 +50,7 @@ El resultado del zip lo encontrará en el directorio de cada plataforma dentro d
 - [X] Office Depot
 - [X] Office Max
 - [X] Stradivarius
-- [ ] Bershka
+- [X] Bershka
 - [ ] Pull&Bear
 - [ ] Forever 21
 - [ ] Liverpool
