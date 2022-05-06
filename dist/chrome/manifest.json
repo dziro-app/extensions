@@ -1,7 +1,7 @@
 {
   "name": "Dziro",
   "description": "Organiza tus compras online con Dziro (https://dziro.vercel.app/).",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "manifest_version": 3,
   "action": {
     "default_title": "Generar código", 
@@ -21,5 +21,11 @@
   "permissions": ["activeTab", "scripting"],
   "background": {
     "service_worker": "background.js"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["Scanner.js"]
+    }
+  ]
 }
